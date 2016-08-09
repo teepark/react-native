@@ -34,6 +34,7 @@ const invariant = require('fbjs/lib/invariant');
 const requireNativeComponent = require('requireNativeComponent');
 
 const onlyMultiline = {
+  numerOfLines: true,
   onTextInput: true,
   children: true,
 };
@@ -290,7 +291,6 @@ const TextInput = React.createClass({
     /**
      * Sets the number of lines for a `TextInput`. Use it with multiline set to
      * `true` to be able to fill the lines.
-     * @platform android
      */
     numberOfLines: PropTypes.number,
     /**
