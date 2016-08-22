@@ -335,11 +335,6 @@ static NSAttributedString *removeReactTagFromString(NSAttributedString *string)
   [self updateFrames];
 }
 
-- (NSString *)text
-{
-  return _textView.text;
-}
-
 - (NSArray *)extractLines
 {
   NSString *text = [self text];
