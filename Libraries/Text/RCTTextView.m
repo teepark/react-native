@@ -635,7 +635,6 @@ static BOOL findMismatch(NSString *first, NSString *second, NSRange *firstRange,
     @"eventCount": @(_nativeEventCount),
     @"lines": [self extractLines],
   });
-  [_eventDispatcher sendInputEventWithName:@"change" body:event];
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView
